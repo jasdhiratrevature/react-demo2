@@ -84,3 +84,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 5. next step is to execute the app by launching the dev server
 	use the following command in the terminal to launch the app in dev server
 		`npm run start`
+--
+## 03-Components and Templates
+1. Components are the building blocks of any React application
+2. A page for a react app might be built using multiple components.
+3. Each component is a self contained section oc content.
+	For example :- a navbar 
+4. In React, components contain their own Logic and Template, i.e. the html structure and javascript logic.
+5. In the base application we have only one component which is the `<App/>` component in index.js
+6. The `<App/>` component is known as the root component, please open the App.js to view.
+7. When we open the App.js we basically see a function App() and that returns what looks like as some HTML code.
+*NOTE:  The function starts with a capital letter.
+8. The contents inside the App() function looks like HTML but it is not, infact it is JSX.
+9. JSX allows us to create html style templates and components and in the back ground a transpiler called babel converts this jsx template into html when we save the file and it renders that html.
+10. One big difference between JSX and HTML is the way we add classes. In HTML we use class where as in JSX we use className attribute. 
+11. In older version of react we need to import react in top of every file, now we do not require them.From version 17 onwards we do not need the import.
+12. Let us do some clean up, so open the App.js and delete what is inside the App() function in the div tag.
+13. Let the return statement be there, and inside the return with the div tag.
+14. Inside the div tag create another div tag with h1 tag.
+15. Delete the import for logo at the top.
+16. Save the file and see the output on the browser
+17. At the end of the file there is an export statement, we always export our components so as that we can use it in other files.
