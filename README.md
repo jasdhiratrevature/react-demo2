@@ -131,3 +131,15 @@ Extras : Install a package Simple React Snippets
 10. Create a new component for Home page. Create a file Home.js
 11. Import the Home Component inside the App.js and nest it inside the content div
 ---
+## 06-Adding_Styles
+
+1. Now let us add some css to our components.
+2. In the root component (App.js) file there is already a import for App.css
+3. This App.css is also applicable on the other components which are displayed on the App component.
+4. For large project we can use CSS modules in React by using <ComponentName>.module.css
+5. Since we are making a small project we will put all our CSS into 1 single css file and that file would be index.css, that is the global css and would be applicable to all components.
+6. the index.css file is imported in index.js file 
+7. Delete the import for App.css from the App.js( you can also delete the App.css file)
+8. Since we are going to use index.css, delete all the code from index.css first and then create our styling rules.
+* Note : You can copy the styles from the repo or create your own styles.
+9. Also we will add some inline styling in the Navbar.js
