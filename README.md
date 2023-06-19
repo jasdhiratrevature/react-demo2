@@ -115,3 +115,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 4. We can oupput numbers,string, arrays in `{}` but boolenas and Objects, we can't.
 5. We can also write the dynamic values and javascript statement inside the curly brackets that returns a valid value , either a string , a number or an array
 For Example : `{10}` -- `{"Hello}`
+---
+## 05-Multiple_Components
+
+1. So far we have only one component App component and this is known as the root component of the application.
+2. In react components are structured in a way that it makes a component tree. 
+3. The App component sits on top and if we were to make more components we nest them inside the root component.
+4. To make a new component we need a new file , make it inside the src folder, name the file as Navbar.js.
+5. Remember a component is a function which returns JSX template and that function is exported.
+Extras : Install a package Simple React Snippets 
+6. write code the create a functional component , we are creating a Navbar component
+7. Once the code is complete for Navbar, import the component to App.js, and nest in the App component.
+8. Nest the Navbar above the content div.
+9. Check the application on the browser.
+10. Create a new component for Home page. Create a file Home.js
+11. Import the Home Component inside the App.js and nest it inside the content div
+---
