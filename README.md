@@ -181,3 +181,14 @@ Extras : Install a package Simple React Snippets
 20. Using the useState hook, it will re-render the template every time there is a change in the state / value of the name variable.
 21. Let us practice by using some another variable let say for example age  
 ---
+10-Outputting_Lists
+
+1. Let us create some dummy data for our blog we will use the useState Hook.
+2. Clean up the code for Home Component.
+3. Let us create an array of posts for our blog.
+4. Now we will output this data in our template.
+5. To display the data we will iterate over the blogs array (Data) using the map() function
+6. Each root element that we return in the list must have a key property.
+7. React uses this key property to keep track of each item in the DOM as it outputs it, so if data changes at any point if we remove or add new items to the array, React can keep track of those items, so you always need to add a key attribute to each item that we output other wise React cannot distinguish between list item in the DOM, so this is normally an id property for each item in the array. and the key must be unique.
+8. Also add some CSS for the list in the index.css. (Can copy the same from the repo)
+---
