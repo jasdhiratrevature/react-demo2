@@ -74,7 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Lesson 2 - Create React App
 1. To create a react app, use the create-react-app tool.
-	use the following command : ``` code npx create-react-app ```
+	use the following command : ` npx create-react-app `
 2. Open VS code and navigate to the folder you want to create your react app in.
 3. Open the terminal and type the command to create a react app followed by the name of the app.
 ` npx create-react-app my-blog`
