@@ -155,3 +155,29 @@ Extras : Install a package Simple React Snippets
 7. What if we want to pass an argument to the function, to do this we have to wrap the function call inside and anonymous function.
 8. For understanding this concept create another button and the handlerFunction that takes an argument.
 ---
+## 08-Using_State
+
+1. What if we want certain variables to change over time or change due to some action.
+2. For understanding this, we will clean up our Home.js and delete the handler method with the parameter and also clean up the code inside the handleClick
+3. Let us create a variable and inititalize it
+	`name="Jasdhir"`
+4. Next is we output the name in the template like
+	`<p>{name}</p>`
+5. So the name is displayed on the web page.
+6. What if we want to change the value of the name on click of the button.
+7. Lets make changes in the handleClick() and update name to say "Ravi";
+8. Now if we reload the page and click on the button the value of name is not changed from 'Jasdhir'  to 'Ravi' in the template.
+9. The value of name changes but is not reflected(update) in the template.
+10. To observe the change in value of name, use console.log(name) in clickHandle
+11. Reload the page and Observe the console.
+12. React dosen't watch for the changes to the variable "name"
+13. So when the value changes, it doesnot trigger react to re-render the template with the new value.
+14. To make this variable reactive, we use a Hook in React and for this we will use a hook called as `useState()`
+15. So a Hook in react is a function that does a certain job.Hook in React starts with the word use.
+16. The useState hook gives us a way to make a reactive value and also provides us with a way to change that value when ever we want.
+17. In order to use the useState hook import it first.
+18. Please clean up the variable declaration and clean the code inside the handleClick function.
+19. Now write/use the useState Hook
+20. Using the useState hook, it will re-render the template every time there is a change in the state / value of the name variable.
+21. Let us practice by using some another variable let say for example age  
+---
