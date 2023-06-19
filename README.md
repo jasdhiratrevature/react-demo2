@@ -77,9 +77,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 	use the following command : ` npx create-react-app `
 2. Open VS code and navigate to the folder you want to create your react app in.
 3. Open the terminal and type the command to create a react app followed by the name of the app.
+
 ` npx create-react-app my-blog`
 
 4. Once the project is created navigate to project directory
 5. next step is to execute the app by launching the dev server
 	use the following command in the terminal to launch the app in dev server
-	`npm run start`
+		`npm run start`
