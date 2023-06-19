@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+Main Branch : This is the starter commit, we can use this branch as the base for creating the app.
+### Lesson 2 - Create React App
+1. To create a react app, use the create-react-app tool.
+	use the following command : npx create-react-app
+2. Open VS code and navigate to the folder you want to create your react app in.
+3. Open the terminal and type the command to create a react app followed by the name of the app.
+npx create-react-app my-blog
+
+4. Once the project is created navigate to project directory
+5. next step is to execute the app by launching the dev server
+	use the following command in the terminal to launch the app in dev server
+	npm run start
