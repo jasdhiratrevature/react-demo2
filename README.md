@@ -143,3 +143,15 @@ Extras : Install a package Simple React Snippets
 8. Since we are going to use index.css, delete all the code from index.css first and then create our styling rules.
 * Note : You can copy the styles from the repo or create your own styles.
 9. Also we will add some inline styling in the Navbar.js
+---
+## 07-Click_Events
+
+1. In the Home.js file create a button.
+2. We want to react to it when the user clicks on this button, i.e fire a function on button click.
+3. So we will create a function inside the Home Component Function.
+4. Let us call this function handleClick(), write  some basic functionality for this function
+5. On the onClick event of the button call the handleClick function `{handleClick}`.
+6. Remember we are passing a reference to the function not calling it. hence we have omitted the () at the end of `{handleClick}`
+7. What if we want to pass an argument to the function, to do this we have to wrap the function call inside and anonymous function.
+8. For understanding this concept create another button and the handlerFunction that takes an argument.
+---
