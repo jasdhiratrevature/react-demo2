@@ -84,7 +84,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 5. next step is to execute the app by launching the dev server
 	use the following command in the terminal to launch the app in dev server
 		`npm run start`
---
+
+---
 ## 03-Components and Templates
 1. Components are the building blocks of any React application
 2. A page for a react app might be built using multiple components.
@@ -105,3 +106,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 15. Delete the import for logo at the top.
 16. Save the file and see the output on the browser
 17. At the end of the file there is an export statement, we always export our components so as that we can use it in other files.
+
+---
+04 - 04-Dynamic_Values_In_Template
+1. We can output dynamic values in the JSX template.
+2. Create a variable inside the App() function. 
+3. Inside the h1 tag in the JSX template use `{title}` to display the dynamic value.
+4. We can oupput numbers,string, arrays in `{}` but boolenas and Objects, we can't.
+5. We can also write the dynamic values and javascript statement inside the curly brackets that returns a valid value , either a string , a number or an array
+For Example : `{10}` -- `{"Hello}`
