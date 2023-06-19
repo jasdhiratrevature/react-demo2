@@ -108,7 +108,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 17. At the end of the file there is an export statement, we always export our components so as that we can use it in other files.
 
 ---
-04 - 04-Dynamic_Values_In_Template
+## 04-Dynamic_Values_In_Template
 1. We can output dynamic values in the JSX template.
 2. Create a variable inside the App() function. 
 3. Inside the h1 tag in the JSX template use `{title}` to display the dynamic value.
