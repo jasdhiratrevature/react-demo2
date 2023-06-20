@@ -230,3 +230,4 @@ and pass the handleDelete function as a prop.
 6. reload the blog application, you can see the console output written inside useEffect.
 7. if we change some data, let's say delete a blog entry the page will be re-rendered and the useEffect code will execute again.
 8. Avoid updating the state inside the useEffect as it will end up in a continuous loop.
+---
