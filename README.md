@@ -231,3 +231,15 @@ and pass the handleDelete function as a prop.
 7. if we change some data, let's say delete a blog entry the page will be re-rendered and the useEffect code will execute again.
 8. Avoid updating the state inside the useEffect as it will end up in a continuous loop.
 ---
+## 15-useEffect_Dependencies
+
+1. The useEffect hook fires after every render. But you always want to that to happen. maybe we want a single render or a certain renders.
+2. To do that we can use something called a dependency array and this is basically an array that we can pass into this useEffect hook as a second argument.
+3. Modify the code in the Home component (Home.js)
+4. Open the developer tool in the browser to check.
+5. You will observe that the useEffect ran just once. Not on every re-render.
+6. Now if we want to run the useEffect more than once. that is for a stateChange or some thing.
+7. So let as add another useState hook and update a variable.
+8. Add a button below the `<BlogList/> Tag` to call the setName on button click.
+9. Open the developer tools in the browser and see useEffect did execute . also click on the change name button to see the useEffect hook executed again.
+--
