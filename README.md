@@ -208,3 +208,7 @@ Extras : Install a package Simple React Snippets
 12. You will observe the error is not gone and you can see the list of the blogs.
 13. We can pass multiple props in a tag, for example we can pass the title
 14. Instead of passing `props` and extracting the values using the DOT operator, we can use Destructuring and get the data.
+---
+## 12-Reusing_Components
+
+---
