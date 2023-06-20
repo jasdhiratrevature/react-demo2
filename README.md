@@ -212,3 +212,11 @@ Extras : Install a package Simple React Snippets
 ## 12-Reusing_Components
 
 ---
+## 13-Functions_As_Props
+
+1. Now we want the allow the user to delete a blog by clicking on a button or some other user action.
+2. So let us create a button for every blog that is listed in the BlogList.
+3. Associate a onClick event handle with the button
+4. Define the handle function for the button in the Home component in the Home.js file
+and pass the handleDelete function as a prop.
+---
