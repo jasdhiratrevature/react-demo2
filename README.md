@@ -272,3 +272,10 @@ by default json-server listens on port 3000, to use other port use the -p switch
 11. Also delete the handleDelete method for the time being. 
 12. Also in the BlogList component delete the button for delete and also the handleDelete props.
 ---
+## 18-Conditional_Loading_Message
+
+1. At times the data from server takes time to load in such condition we should display the loading messages
+2. we will create another piece of state for updating the loading state in the Home component
+3. All another conditional rendering template above the `<BlogList/>` Tag to tell the state of the data loading or not.
+4. Also update the isLoading value using the setIsPending method in the fetch call.
+---
