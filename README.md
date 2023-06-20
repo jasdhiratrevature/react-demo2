@@ -220,3 +220,13 @@ Extras : Install a package Simple React Snippets
 4. Define the handle function for the button in the Home component in the Home.js file
 and pass the handleDelete function as a prop.
 ---
+## 14-useEffect_Hook
+
+1. the useEffect Hook runs a function at every render of the component
+2. The useEffect can be used to run code for every render.
+3. In order to use the useEffect we need to import it first. In the Home component import the useState Hook.
+4. useEffect hook is tipically used when we need to fetch data from an API, perform authentication etc, and these things are known as side effect in react.
+5. Open your browser and open the developer tool in the browser.
+6. reload the blog application, you can see the console output written inside useEffect.
+7. if we change some data, let's say delete a blog entry the page will be re-rendered and the useEffect code will execute again.
+8. Avoid updating the state inside the useEffect as it will end up in a continuous loop.
