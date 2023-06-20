@@ -280,3 +280,10 @@ by default json-server listens on port 3000, to use other port use the -p switch
 4. Also update the isLoading value using the setIsPending method in the fetch call.
 5. To simulate the loading message behaviour we will wrap the fetch call in a setTimeOut method.
 ---
+## 19-Handling_Fetch_Errors
+
+1. To handle the errors add a catch block in the fetch call.
+2. we have to handle another condition as to when the server is not sending any data but is still sending responses, so we need to check that response object when we get it back , so check for the response to be OK. if not throw an error
+3. Now we are catching the errors, so let us store the error in some kinde of state so that we can output it to the browser, so create a state for error, with a initial value of null.
+4. In the catch block setError with the error message and using conditional rendering render the error message on the browser and also update the isPending state to false.
+---
