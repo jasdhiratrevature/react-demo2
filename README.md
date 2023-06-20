@@ -278,4 +278,5 @@ by default json-server listens on port 3000, to use other port use the -p switch
 2. we will create another piece of state for updating the loading state in the Home component
 3. All another conditional rendering template above the `<BlogList/>` Tag to tell the state of the data loading or not.
 4. Also update the isLoading value using the setIsPending method in the fetch call.
+5. To simulate the loading message behaviour we will wrap the fetch call in a setTimeOut method.
 ---
