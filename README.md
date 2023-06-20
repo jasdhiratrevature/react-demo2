@@ -243,3 +243,15 @@ and pass the handleDelete function as a prop.
 8. Add a button below the `<BlogList/> Tag` to call the setName on button click.
 9. Open the developer tools in the browser and see useEffect did execute . also click on the change name button to see the useEffect hook executed again.
 --
+## 16-Using_JSON_Server
+
+1.  useEffect is a good place to fetch data where the component first renders initially, and then we can use that data in our application.
+2. we will be using json-server to make a fake rest api using a json file which will be the source for our data for the blog.
+3. Create a folder `data`(can name this anything you want) in the root of the react project and create a json file , can use any file name, I will be using myBlog.json and enter some dummy data.
+4. once done we need to start the json-server and watch the json file on some port , so we get the end point. Use the following command
+` npx json-server -w ./data/myblog.json -p 3030`
+-w is watch 
+- p is port 
+by default json-server listens on port 3000, to use other port use the -p switch.
+5. Once the json-server starts open the browser and point it to 
+	` http://localhost:3030/blogs`
