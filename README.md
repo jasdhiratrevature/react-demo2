@@ -181,7 +181,7 @@ Extras : Install a package Simple React Snippets
 20. Using the useState hook, it will re-render the template every time there is a change in the state / value of the name variable.
 21. Let us practice by using some another variable let say for example age  
 ---
-10-Outputting_Lists
+## 10-Outputting_Lists
 
 1. Let us create some dummy data for our blog we will use the useState Hook.
 2. Clean up the code for Home Component.
@@ -192,3 +192,19 @@ Extras : Install a package Simple React Snippets
 7. React uses this key property to keep track of each item in the DOM as it outputs it, so if data changes at any point if we remove or add new items to the array, React can keep track of those items, so you always need to add a key attribute to each item that we output other wise React cannot distinguish between list item in the DOM, so this is normally an id property for each item in the array. and the key must be unique.
 8. Also add some CSS for the list in the index.css. (Can copy the same from the repo)
 ---
+## 11-Props
+
+1. If we want to display some of the information in different - different component, essesntially we would be duplicating the code at multiple places. For example : our current code while displaying the blog list on Home.js
+2. so we can write the code at one place, make it like a component and re use it again and again.
+3. Let us make a BlogList component for our Blog.(BlogList.js)
+4. Cut the logic to display the blog list from the Home.js component and place it on BlogList component.
+5. List the BlogList component inside the Home Component
+6. The application will give an error as blogs not defined, because in the BlogList component we are trying to use map() on the blog, so we are using data which is not in the BlogList component.
+7. The solution is to use props, whereby we pass this data from the Home Component to BlogList component.
+8. Props are a way to pass data from a parent component to a child component.
+9. So the way is to create a property on the `<BlogList/> Tag`.So that it can be passed to the BlogList component.
+10. The component can receive the property as the parameter to the Component function.
+11. And we can extract the data from it by using the DOT operator like `props.`
+12. You will observe the error is not gone and you can see the list of the blogs.
+13. We can pass multiple props in a tag, for example we can pass the title
+14. Instead of passing `props` and extracting the values using the DOT operator, we can use Destructuring and get the data.
