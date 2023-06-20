@@ -242,7 +242,7 @@ and pass the handleDelete function as a prop.
 7. So let as add another useState hook and update a variable.
 8. Add a button below the `<BlogList/> Tag` to call the setName on button click.
 9. Open the developer tools in the browser and see useEffect did execute . also click on the change name button to see the useEffect hook executed again.
---
+---
 ## 16-Using_JSON_Server
 
 1.  useEffect is a good place to fetch data where the component first renders initially, and then we can use that data in our application.
@@ -255,3 +255,20 @@ and pass the handleDelete function as a prop.
 by default json-server listens on port 3000, to use other port use the -p switch.
 5. Once the json-server starts open the browser and point it to 
 	` http://localhost:3030/blogs`
+
+---
+## 17-Fetching_Data_with_useEffect
+
+1.  We would be fetching the data using the fetch API from our json-server in useEffect hook
+2. In our Home component clean up the initinal setState where we have initialized the hardcoded blog data and set it to null.
+3. let us make the fetch request in the useEffect hook, pass the end point in the fetch call. Log the data to the console
+4. Comment out the `<BlogList/> tag` to avoid any errors.
+5. Check the console and the data from the json file using the json-server will be seen in the console.
+6. once the data is visible on console , comment that line and call the setBlogs , useState method and pass the data as a parameter.
+7. Also uncomment the `<BlogList/> Tag`, there might still be errors on the page. `Cannot read properties of null`
+8. It takes a fraction of second to fetch and load the data from the json-server and the data is still null hence the error. and we are using thr map () method on null.
+9. so we will eventually get the data , but untill we get the data , we need to combat that error.
+10. We really don't want to output the `<BlogList/>` until we have a value for blogs, so what we could do is do a little dynamic check here
+11. Also delete the handleDelete method for the time being. 
+12. Also in the BlogList component delete the button for delete and also the handleDelete props.
+---
