@@ -287,3 +287,19 @@ by default json-server listens on port 3000, to use other port use the -p switch
 3. Now we are catching the errors, so let us store the error in some kinde of state so that we can output it to the browser, so create a state for error, with a initial value of null.
 4. In the catch block setError with the error message and using conditional rendering render the error message on the browser and also update the isPending state to false.
 ---
+## 20-Custom_Hook
+
+1. If we want to use the already created and developed code for fetching data with loading state and error state, we would simply be duplicating the code.
+2. It would be good if we can make use of this code again in different components to make it bit more reusable.
+3. One solution would be take this code and put it in own js file and then we just import that into the other components to use.
+4. Another approach would be to create a custom hook with the specific ability to do specific tasks.
+5. To make a custom hook create a new file, call it as useFetch.js 
+6. Inside this file we will place all of the functionality to fetch the data exactly as we did in the Home component,
+7. Create a function inside useFetch, we can call it useFetch, custom hooks in react start with "use" word.
+8. Write the entire logic to fetch the data and maintain the state for loading and error in the created custom hook, useFetch.
+9. Once we have moved all the code to useFetch hook, tweak the code a bit more, insted of using blogs , let us make it more generic by renaming them to data and setData respectively.
+10. The useFetch hook that we have created return an object and place 3 values in that object , ` return { data, isPending, error };`
+11. Also we can pas the url in the useFetch hook, instead of hardcoding it.
+12. Also the url will be a dependency to useEffect, this means that whenever, we change the url the useEffect will run and make the fetch call.
+13. Now import and use the useFetch() hook inside the Home component.
+---
