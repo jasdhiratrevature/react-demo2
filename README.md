@@ -319,7 +319,16 @@ by default json-server listens on port 3000, to use other port use the -p switch
 11. so lets do the Route for our home page.
 
 ## Important Note
-a. From react-router-dom version 6 , the `<Switch>` is not longer used, instead we use `<Routes>`
+
+1.From react-router-dom version 6 , the `<Switch>` is not longer used, instead we use `<Routes>`
 b. Unlike the `<Switch>` API in v5, all `<Route path>` and `<Link to>` values under v6's `<Routes>` element are automatically relative to the parent route that rendered them. This makes it a lot easier to think about your React Router app as lots of small apps that are just stitched together at different "mount" points.
 c. In React Router v6 we switched from using v5's `<Route component>` and `<Route render>` APIs to `<Route element>`. 
+---
+## 22_Exact_Match_Routes
+
+1. Let us create a new page for adding a web blog.
+2. Let as name it as Create and the corresponding file is Create.js
+3. Update the Routes and add a Route in App.js
+## Note :
+In v6 all the routes match exactly by default
 ---
