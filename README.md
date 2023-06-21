@@ -331,3 +331,13 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 2. React uses the `<Link>` Tag to navigate from one component to another.
 3. Open the Navbar component and modifiy the anchor tags to work with the Link Tag.
 ---
+## 25-Route_Parameters
+
+1. Some times we need to pass dynamic values as part of a route, for example a blog details page
+2. In our React app we should be able to use our Route Parameters and access those route parameters from our components.
+3. we start with creating a BlogDetails component, this component will display the details of the blog post when user visits a particular blog post. 
+4. Let us create a route for this component, so open the App.js and create the route.
+5. Lets go back to BlogDetails component and try to get the dynamic blog id that is passed for a blog, for this we are going to use the useParam hook from reack-route-dom
+6. On the Home component, we need to attach a link to each blog , so as when we click on the blog item, it will take us to to BlogDetails page and display it.
+7. Finally add some css styles to the blog item in the BlogList component.
+---
