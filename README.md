@@ -368,5 +368,14 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 1. Once we submit the form and the data is added using the fetch API , we should redirect the user back to the home page.
 2. For this we are going to use another hook, useNavigate  in the Create.js
 ---
+ ## 31-Deleting_Blogs
+
+1. Now we want to delete a blog post, so we to put a button in the BlogDetails component
+2. add a button and also add the onClick event and write a handler for the onClick event
+	handleClick()
+3. In the handleClick() method, call the fetch() and use the http DELETE method to delete the post based on the post id.
+4. Once done navigate back to the home page.
+---
+
 
 
