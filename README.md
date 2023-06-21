@@ -376,6 +376,12 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 3. In the handleClick() method, call the fetch() and use the http DELETE method to delete the post based on the post id.
 4. Once done navigate back to the home page.
 ---
+## 32-404_Pages
 
+1. When the user goes to some other url not related to the project we should show the user a customized 404 page.
+2. First create a component NotFound for this. NotFound.js
+3. Set up the Route for this in app.js file. 
+4. The route for NotFound should be the last one. 
+---
 
 
