@@ -350,4 +350,11 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 5. Once the changes are made, click on a Blog Post and you will be taken to the BlogDetails page for that post.
 6. Also add some style for the BlogDetails page in index.css
 ---
+## 27-React_Forms
+
+1. We need a form , so that the user can type in a new blog post and make a call to fetch to save the post.
+2. So we need to discuss about form fields and controlled inputs, controlled inputs are basically a way in react of setting up input fields in forms so that we can track their values. For Example a user can type into a input field and we can store that value of what they type in some kind of state and we can also make it so that if the state changes that in turn updates the value tat we see in the input field so we're always keeping the input field and our state in sync with each other.
+3. So let us create a form in the Create component Create.js to create a form.
+4. Also add some styles for the form
+---
 
