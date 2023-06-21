@@ -363,5 +363,10 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 2. when a button is submitted inside a form, it fires a submit event on the form itself, so we can listen for that submit event and react to it .
 3. Add a onSubmit event to the form and also add the handler function, i.e. handleSubmit.
 ---
+## 30-Programmatic_Redirects
+
+1. Once we submit the form and the data is added using the fetch API , we should redirect the user back to the home page.
+2. For this we are going to use another hook, useNavigate  in the Create.js
+---
 
 
