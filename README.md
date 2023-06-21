@@ -322,6 +322,7 @@ by default json-server listens on port 3000, to use other port use the -p switch
 a. From react-router-dom version 6 , the `<Switch>` is not longer used, instead we use `<Routes>`
 b. Unlike the `<Switch>` API in v5, all `<Route path>` and `<Link to>` values under v6's `<Routes>` element are automatically relative to the parent route that rendered them. This makes it a lot easier to think about your React Router app as lots of small apps that are just stitched together at different "mount" points.
 c. In React Router v6 we switched from using v5's `<Route component>` and `<Route render>` APIs to `<Route element>`. 
+
 ---
 
 ## 23-Router_Links
