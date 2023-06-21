@@ -357,4 +357,11 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 3. So let us create a form in the Create component Create.js to create a form.
 4. Also add some styles for the form
 ---
+## 28-Submit_Events
+
+1. So we have created the form now we want to submit the form and do something with the data
+2. when a button is submitted inside a form, it fires a submit event on the form itself, so we can listen for that submit event and react to it .
+3. Add a onSubmit event to the form and also add the handler function, i.e. handleSubmit.
+---
+
 
