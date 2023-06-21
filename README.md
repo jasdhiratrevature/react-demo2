@@ -303,3 +303,23 @@ by default json-server listens on port 3000, to use other port use the -p switch
 12. Also the url will be a dependency to useEffect, this means that whenever, we change the url the useEffect will run and make the fetch call.
 13. Now import and use the useFetch() hook inside the Home component.
 ---
+21-React_Router
+
+1. Now is the time that we will start navigating to the other parts of our application.
+2. To achieve this in React we will use React Router
+3. To get going with the routing in react, we should first install the react router package, because it is not a part of core react library.
+4. Open a new terminal and type the following command 
+	`npm install react-router-dom`
+5. Once we are done with installing the react-router-dom , its time to set up the routing
+6. Open the root component i.e. App.js and import the following and define the routes
+7. We need to surround our entire application with the router, so surround the div component in the return with the `<Router>` Tag.
+8. The next step is to layout our page in terms of components, i.e. where we want our page content to go whe nwe go to different pages. 
+9. So we use `<Switch>` Tag for this, the `<Switch>` components makes sure that only one route shows at any one time.
+10. Now we will set up individual route inside the `<Switch>` component, to create a route for each page we have using the `<Route>` component.
+11. so lets do the Route for our home page.
+
+## Important Note
+a. From react-router-dom version 6 , the `<Switch>` is not longer used, instead we use `<Routes>`
+b. Unlike the `<Switch>` API in v5, all `<Route path>` and `<Link to>` values under v6's `<Routes>` element are automatically relative to the parent route that rendered them. This makes it a lot easier to think about your React Router app as lots of small apps that are just stitched together at different "mount" points.
+c. In React Router v6 we switched from using v5's `<Route component>` and `<Route render>` APIs to `<Route element>`. 
+---
