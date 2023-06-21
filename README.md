@@ -341,3 +341,13 @@ c. In React Router v6 we switched from using v5's `<Route component>` and `<Rout
 6. On the Home component, we need to attach a link to each blog , so as when we click on the blog item, it will take us to to BlogDetails page and display it.
 7. Finally add some css styles to the blog item in the BlogList component.
 ---
+## 26-Reusing_Custom_Hooks
+
+1. Inside the BlogDetails Page we can make the fetch request and get the details of the blog post from our API.
+2. For this we would be reusing out useFetch hook created earlier.
+3. Our custom hook useFetch returns 3 data : data,isPending,error - 
+4. Inside the BlogDetails page use the useFetch hook to get the data for a individual blog post.
+5. Once the changes are made, click on a Blog Post and you will be taken to the BlogDetails page for that post.
+6. Also add some style for the BlogDetails page in index.css
+---
+
